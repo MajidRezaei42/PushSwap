@@ -14,6 +14,11 @@
 
 void	sort_stacks(t_node **a, t_node **b)
 {
+	if (stack_size(*a) == 2)
+	{
+		sa(a);
+		return ;
+	}
 	while (stack_size(*a) > 3)
 		pb(a, b);
 	sort_three(a);
